@@ -1,0 +1,19 @@
+{
+  "name": "exp-001-knapsack",
+  "version": "1.0.0",
+  "description": "Experimental playground for solving the Knapsack problem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detohm/exp-001-knapsack.git"
+  },
+  "author": "detohm <ohm.attaphong@gmail.com> (https://detohm.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/detohm/exp-001-knapsack/issues"
+  },
+  "homepage": "https://github.com/detohm/exp-001-knapsack#readme"
+}
