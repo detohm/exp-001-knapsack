@@ -5,16 +5,18 @@ let finalResult = {
   solution: []
 }
 
+let countNode = 0
+
 const bruteforce = (data) => {
 
   dfs([], 0, data.weights, data.values, data.limitWeight)
-
+  finalResult.countNode = countNode
   return finalResult
 }
 
 
 const dfs = (tempArr, index, weights, values, limitWeight) => {
-
+  countNode++
   //reach the end of state-space search tree
   if(index == weights.length){
 
@@ -38,6 +40,7 @@ const dfs = (tempArr, index, weights, values, limitWeight) => {
     return
 
   }
+
 
   dfs(tempArr.concat(0),index+1, weights, values, limitWeight)
   dfs(tempArr.concat(1),index+1, weights, values, limitWeight)

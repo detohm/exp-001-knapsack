@@ -4,11 +4,11 @@ let finalResult = {
   optimalValue: 0,
   solution: []
 }
-
+let countNode = 0
 const backtracking = (data) => {
 
   dfs([], 0, data.weights, data.values, data.limitWeight)
-
+  finalResult.countNode = countNode
   return finalResult
 }
 
@@ -28,7 +28,7 @@ const validate = (tempArr,weights,limitWeight) => {
 
 
 const dfs = (tempArr, index, weights, values, limitWeight) => {
-
+  countNode++
   if(!validate(tempArr,weights,limitWeight)){ return }
 
   //reach the end of state-space search tree

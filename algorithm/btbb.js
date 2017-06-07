@@ -4,7 +4,7 @@ let finalResult = {
   optimalValue: 0,
   solution: []
 }
-
+let countNode = 0
 let bounds = []
 
 const btbb = (data) => {
@@ -14,7 +14,7 @@ const btbb = (data) => {
   }
 
   dfs([], 0, data.weights, data.values, data.limitWeight)
-
+  finalResult.countNode = countNode
   return finalResult
 }
 
@@ -49,7 +49,7 @@ const validateBound = (tempArr, values, finalResult, bounds) => {
 
 
 const dfs = (tempArr, index, weights, values, limitWeight) => {
-
+  countNode++
   if(!validate(tempArr,weights,limitWeight)){ return }
 
 

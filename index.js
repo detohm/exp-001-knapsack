@@ -9,7 +9,7 @@ let reports = []
 
 
 //load data
-let data = dataLoader.load('./dataset/s-1.txt')
+let data = dataLoader.load('./dataset/s-3.txt')
 
 //Bruteforce using DFS
 console.log(`Starting Depth-First Search (Bruteforce)...`)

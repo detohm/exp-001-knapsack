@@ -4,7 +4,7 @@ let finalResult = {
   optimalValue: 0,
   solution: []
 }
-
+let countNode = 0
 let bounds = []
 
 const branchAndBound = (data) => {
@@ -14,7 +14,7 @@ const branchAndBound = (data) => {
   }
 
   dfs([], 0, data.weights, data.values, data.limitWeight)
-
+  finalResult.countNode = countNode
   return finalResult
 }
 
@@ -34,7 +34,7 @@ const validateBound = (tempArr, values, finalResult, bounds) => {
 
 
 const dfs = (tempArr, index, weights, values, limitWeight) => {
-
+  countNode++
   //reach the end of state-space search tree
   if(index == weights.length){
 
