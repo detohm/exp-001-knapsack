@@ -77,10 +77,11 @@ const dfs = (tempArr, index, weights, values, limitWeight) => {
 
   }
 
-  if(validateBound(tempArr,values,finalResult,bounds)){
-    dfs(tempArr.concat(0),index+1, weights, values, limitWeight)
-    dfs(tempArr.concat(1),index+1, weights, values, limitWeight)
-  }
+  if(!validateBound(tempArr,values,finalResult,bounds)){ return }
+
+  dfs(tempArr.concat(0),index+1, weights, values, limitWeight)
+  dfs(tempArr.concat(1),index+1, weights, values, limitWeight)
+
 
 }
 
