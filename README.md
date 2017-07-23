@@ -3,12 +3,12 @@ This repository is an experimental playground to demonstrate how algorithm can d
 
 The code demonstrates 4 approaches below (from the straightforward bruteforcing to mixing all the techniques together)
 
-* Bruteforce 
+* Bruteforce
 * Backtracking
 * Branch & Bound
 * Mix between Backtracking and Brack & Bound
 
-In summary, by altering only few lines of code, we can optimized the computational time to solve this problem... 
+In summary, by altering only few lines of code, we can optimize the computational time to solve this problem...
 
 #### From 76 seconds to just only 1 second !!!
 
